@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod
 @ComponentScan
 class HelloConfig {
 
-  @RequestMapping(value = Array("/"), method = Array(RequestMethod.GET))
+  @RequestMapping(method = Array(RequestMethod.GET),value = Array("/"))
   @ResponseBody
   def displayHelloWorld(): String = "Hello World!"
  
